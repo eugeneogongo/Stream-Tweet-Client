@@ -20,7 +20,7 @@ class TrackForm extends React.Component{
        this.doPost();
     }
     doPost(){
-        axios.post("https://mystreamserver.herokuapp.com:3001/track",{
+        axios.post("https://mystreamserver.herokuapp.com/track",{
             word:this.state.trackword
         }).catch(function (error) {
             console.log(error);
