@@ -21,7 +21,7 @@ class TrackForm extends React.Component{
     }
     doPost(){
 
-        axios.post("https://mystreamserver.herokuapp.com:3000/track",{
+        axios.post("https://mystreamserver.herokuapp.com/track",{
             word:this.state.trackword
         },{
             headers:{
