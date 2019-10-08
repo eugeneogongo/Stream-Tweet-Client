@@ -20,8 +20,13 @@ class TrackForm extends React.Component{
        this.doPost();
     }
     doPost(){
-        axios.post("https://mystreamserver.herokuapp.com/track",{
+
+        axios.post("https://mystreamserver.herokuapp.com:3000/track",{
             word:this.state.trackword
+        },{
+            headers:{
+                "Access-Control-Allow-Origin":"*"
+            }
         }).catch(function (error) {
             console.log(error);
         });
