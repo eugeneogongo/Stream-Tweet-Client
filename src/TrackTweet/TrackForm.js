@@ -54,7 +54,7 @@ class TrackForm extends React.Component{
                         <input type={"text"} name={"word"} required={"true"} onChange={this.handletrackword} className={"form-control"}/>
                     </div>
                     <div className={styles.formGroup}>
-                        <input type={"submit"} className={"btn btn-dark mt-3"}/>
+                        <input type={"submit"}  value={"Submit"} className={"btn btn-dark mt-3"}/>
                     </div>
                 </form>
             </div>

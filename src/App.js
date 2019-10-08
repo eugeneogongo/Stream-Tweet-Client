@@ -23,7 +23,7 @@ class App extends React.Component {
 
     setSocket() {
         const _this = this;
-        let socket = io.connect('https://mystreamserver.herokuapp.com');
+        let socket = io.connect('https://mystreamserver.herokuapp.com/');
 
         socket.on("tweet", function (tweet) {
             list.push(tweet)
